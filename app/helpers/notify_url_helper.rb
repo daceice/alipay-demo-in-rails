@@ -1,0 +1,2 @@
+module NotifyUrlHelper
+end

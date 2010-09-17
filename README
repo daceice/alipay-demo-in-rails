@@ -1,0 +1,10 @@
+== What for
+
+You can find demo of php and asp for alipay on its official forum, but you seldom can find a rails one.
+I share my codes of alipay on rails, hoping I can help someone want it.
+
+I developed it for an online render platform of my formal firm.
+
+== How to use
+
+To use it, first you should substitute "partner", "security_code" and "seller_email" which are still blank in this demo with your own ones.
