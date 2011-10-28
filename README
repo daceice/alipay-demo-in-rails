@@ -1,10 +1,6 @@
-== What for
+不完全的demo，因为项目后来斩腰了，所以共享出来，测试过同步但是没有测试过异步通知。
 
-You can find demo of php and asp for alipay on its official forum, but you seldom can find a rails one.
-I share my codes of alipay on rails, hoping I can help someone want it.
-
-I developed it for an online render platform of my formal firm.
-
-== How to use
-
-To use it, first you should substitute "partner", "security_code" and "seller_email" which are still blank in this demo with your own ones.
+测试和使用的说明
+1. 在/config/environment.rb文件中替换真实的账户信息。原来填写的测试的账户信息是用不了的。
+2. 建立数据库，开启服务端，打开浏览器，查看首页页面，获得测试的
+	一次交易的链接。

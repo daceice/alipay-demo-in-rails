@@ -1,24 +1,24 @@
 class ReturnUrlController < ApplicationController  
-	@@gateway=""       #支付接口
-	@@security_code=""	#安全校验码
-	@@partner="   "    #合作伙伴ID
-	@@sign_type=""       #加密方式 系统默认
-	@@mysign=""       #签名     
-	@@_input_charset=""    #字符编码格式
-	@@transport=""        #访问模式
+	@@gateway = ""       #支付接口
+	@@security_code = ""	#安全校验码
+	@@partner = PARTNER    #合作伙伴ID
+	@@sign_type = ""       #加密方式 系统默认
+	@@mysign = ""       #签名     
+	@@_input_charset = ""    #字符编码格式
+	@@transport = ""        #访问模式
 	
 	
   def return_url
-    @partner        = ""       #合作伙伴ID
-    @security_code  = ""       #安全检验码
-    @seller_email   = ""       #卖家支付宝帐户
+    @partner        = PARTNER       #合作伙伴ID
+    @security_code  = KEY       #安全检验码
+    @seller_email   = SELLEREMAIL       #卖家支付宝帐户
     @_input_charset = "utf-8"  #字符编码格式  目前支持 GBK 或 utf-8
     @sign_type      = "MD5"    #加密方式  系统默认(不要修改)
     @transport      = "https"  #访问模式,你可以根据自己的服务器是否支持ssl访问而选择http以及https访问模式(系统默认,不要修改)
     #
-    @notify_url     = "http://localhost/notify_url/notify_url" #交易过程中服务器通知的页面 要用 http://格式的完整路径
+    @notify_url     = NOTIFYURL #交易过程中服务器通知的页面 要用 http://格式的完整路径
     #
-    @return_url     = "http://localhost/return_url/return_url" #付完款后跳转的页面 要用 http://格式的完整路径
+    @return_url     = CALLBACKURL #付完款后跳转的页面 要用 http://格式的完整路径
     #
     @show_url       = "http://www.veryrender.com"        #你网站商品的展示地址       
 

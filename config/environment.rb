@@ -3,6 +3,13 @@
 # Specifies gem version of Rails to use when vendor/rails is not present
 RAILS_GEM_VERSION = '2.3.3' unless defined? RAILS_GEM_VERSION
 
+PARTNER = "2088101000137799" unless defined? PARTNER
+KEY = "d33k5kkk3n4nnn3kd33k5kkk3n4nnn3k" unless defined? KEY 
+SELLEREMAIL	= "chenf003@yahoo.cn"
+NOTIFYURL		= "http://localhost/notify_url/notify_url"	#异步返回消息通知页面，用于告知商户订单状态
+CALLBACKURL	= "http://localhost/return_url/return_url"	#同步返回消息通知页面，用于提示商户订单状态
+
+
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
 
